@@ -12,7 +12,8 @@
         Console.WriteLine("2. Ввести B");
         Console.WriteLine("3. Выполнить операцию '+'");
         Console.WriteLine("4. Выполнить операцию '-'");
-        Console.WriteLine("5. Выход");
+        Console.WriteLine("5. Выполнить операцию '*'");
+        Console.WriteLine("6. Выход");
         Console.Write("Выберите пункт меню: ");
 
         string choice = Console.ReadLine();
@@ -38,6 +39,10 @@
                 break;
 
             case "5":
+                Console.WriteLine($"Результат A * B = {A * B}");
+                break;
+
+            case "6":
                 exit = true;
                 break;
 
@@ -50,3 +55,4 @@
         Console.ReadKey();
     }
 }
+ 
